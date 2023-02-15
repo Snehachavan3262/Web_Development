@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Attribute selector</title>
+    <!--1.[Attribute]-->
+    <style>/*
+        a [target]{
+            color:black;
+        }
+        
+        a[class]{
+            color: brown;
+        }
+        */
+    </style>
+     <!--2.[Attribute=value]-->
+     <style>/*
+        a [target="blank"]{
+            background-color: blueviolet;
+        }
+        */
+    </style>
+<!--3.[Attribute~="value"], -->
+    <style>
+        
+        [class~="animal"]{
+            background-color: blueviolet;
+        }
+    </style>
+ <!--4.[Attribute|="value"], -->
+     <style>
+        [class|="animal"] {
+            background-color: aqua;
+        }
+     </style>
+     <!--5.[Attribute|="value"], -->
+     <style>
+        [class^="animal"] {
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--Attributes-->
+    <caption>Attributes</caption>
+    <a href="https://www.google.com/" target="blank">google</a>
+    <a href="https://www.google.com/" target="_blank">Google</a>
+    <br><hr>
+
+    <!--1.[Attribute], 2.[Attribute="value"]-->
+    <caption><h1>1.[Attribute 2.[Attribute="value"]]</h1></caption>
+    <a href="../Html/Tables.html"target="blank">Tables</a>
+    <a href="../Html/Tables.html"target="_blank">Tables</a>
+    <p class="abc">Hello</p>
+    <a class="A" href="../Html/Tables.html"target="_blank">Tables</a>
+    <br><hr>
+    <!--3.[Attribute~="value"], -->
+    <caption><h1>3.[Attribute~="value"]</h1></caption>
+    <p class="pet animal">pe</p>
+    <p class="animal"></p>
+    <div class="pet animal"></div>
+    <br><hr>
+    <!--4.[Attribute|="value"], -->
+    <caption><h1>4.[Attribute|="value"]</h1></caption>
+    <p class="pet.animal">pet.animal</p>
+    <p class="animal"></p>
+    <div class="animal-lover"></div>
+    <p class="Wildanimal"></p>
+    <br><hr>
+</body>
+</html>

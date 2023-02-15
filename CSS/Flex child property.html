@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex child property</title>
+</head>
+<style>
+    .container{
+        border: 2px solid rgb(255, 0, 0);
+        display:flex;
+        flex-direction:column;
+    }
+    .A{
+        border: 2px solid rgb(204, 255, 0);
+        margin:10px;
+    }
+    .B{
+        border: 2px solid rgb(47, 0, 255);
+        display: flex;
+        margin:10px;
+    }
+    .C{
+        border: 2px solid rgb(0, 255, 17);
+        display: flex;
+        margin:10px;
+        
+    }
+    .D{
+        border: 2px solid rgb(255, 0, 55);
+        padding:100px;
+        margin:3px;
+        flex-shrink:3;
+        
+    }
+    .E{
+        border: 2px solid rgb(0, 238, 255);
+        padding:100px;
+        
+    }
+    .second{
+        border:1px solid black;
+       flex-grow: 2;
+    }
+    .third{
+        border: 2px solid black;
+        padding:20px 200px ;
+        flex-shrink:3;
+       margin:4px;
+    }
+    
+    
+
+</style>
+<body>
+    <div class="container">
+       <div class="A">Header</div>
+       <div class="B">
+            <div class="second">1</div>
+            <div class="second">Flex-grow</div>
+            <div class="second">2</div>
+        </div>
+       <div class="C">
+            <div class="D">
+                <div class="third"></div>
+                <div  class="third"></div>
+                <div  class="third"></div>
+            </div>
+            <div class="E">
+                <div  class="third"></div>
+                <div class="third"></div>
+                <div  class="third"></div>
+            </div>
+       </div>
+    </div>
+</body>
+</html>

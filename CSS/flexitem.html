@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-Item</title>
+    <style>
+        .container{
+            border: 1px solid red;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        .header{
+            border: 1px solid blue;
+            margin: 10px;
+            
+        }
+        .middle{
+            border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+        .footer{
+            border: 1px solid;
+            display: flex;
+            flex-direction: row;
+            margin: 10px;
+        }
+       
+        .f1{
+            border: 2px solid;
+            height: 120px;
+            width: 300px;
+            
+            
+        }
+        .m4{
+            border: 1px solid violet;
+        }
+        .m2{
+            flex-grow: 3;
+            padding: 50px;
+        }
+        .m5{
+            flex-grow: 1;
+        }
+        .fo1{
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+            
+            border: 1px solid green;
+            padding: 120px;
+            flex-grow: 3;
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            <h3>Header Here</h3>
+        </div>
+        <div class="middle">
+            <div class="m1 m4 m5">1</div>
+            <div class="m2 m4">2</div>
+            <div class="m3 m4 m5">3</div>
+        </div>
+        <div class="footer">
+            <div class="foot1 fo1">
+                <div class="f1">A</div>
+                <div class="f1">B</div>
+                <div class="f1">C</div>
+            </div>
+            <div class="foot2 fo1">
+                <div class="f1">a</div>
+                <div class="f1">b</div>
+                <div class="f1">c</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

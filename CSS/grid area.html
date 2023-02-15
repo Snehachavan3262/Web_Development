@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid</title>
+</head>
+<style>
+    .container{
+        border: 2px solid;
+        display:grid;
+        grid-template-columns: auto auto auto;
+        
+        background-color: darkorange;
+        gap:20px 30px;
+        justify-content: space-evenly;
+
+    }
+    
+    .a {
+        border: 2px solid;
+        padding: 120px;
+        
+        background-color: aqua;
+
+        
+       
+    }
+    
+    .c{
+        grid-area:1/2/4/4;
+
+    }
+
+</style>
+<body>
+    <div class="container">
+    <div class="a">1</div>
+    <div class="a ">2</div>
+    <div class="a " >3</div>
+    <div class="a ">4</div>
+    <div class="a c">5</div>
+    <div class="a">6</div>
+    <div class="a">7</div>
+    <div class="a">8</div>
+    <div class="a">9</div>
+    </div>
+</body>
+</html>

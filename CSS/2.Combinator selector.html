@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Combinator selector</title>
+     <!-- 1.Desendent-->
+    <!--
+    <style>div p{
+        color:blue;
+        text-align: left;
+    }
+   
+    </style>
+     -->
+     <!-- 1.Desendent example2-->
+     
+    <style>
+        /*
+        #Combinator p{
+            color:blue;
+        text-align: left; 
+        }
+        */
+    </style>
+   
+
+     <!--2.Child-->
+     
+     <style>
+        /*
+        ul > li{
+            color: brown;
+        }
+        */
+     </style>
+    
+
+    <!--3.Adjacent Sibling Selector-->
+    
+   <style>
+    /*
+    div+p{
+        color: blue;
+    }
+    */
+   </style>
+   
+
+   
+    <!--4.Genral sibling Selector-->
+    
+    <style>
+        
+        div~p{
+            color: blue;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <!-- 1.Desendent-->
+    <caption><h1> 1.Desendent</h1></caption>
+    <div>
+        <p>Shrikant</p>
+        <p>Sneha</p>
+        <h6>Sagar</h6>
+      </div>
+
+      <p>ECS</p>
+      <p>Pratiksha</p>
+      <br><hr>
+
+
+      <!-- 1.Desendent example2-->
+    <caption><h1> Desendent example2</h1></caption>
+    <div id="Combinator">
+        <p>Shrikant</p>
+        <p>Sneha</p>
+        <h6>Sagar</h6>
+      </div>
+
+      <p>ECS</p>
+      <p>Pratiksha</p>
+      <br><hr>
+
+       <!--2.Child-->
+       <caption><h1>2.Child</h1></caption>
+       <div>
+        <p>Hiiiii</p>
+        <ul>
+            <li>Tea</li>
+            <li>Coffee</li>
+
+            <ul>
+                <li>Mango</li>
+                <li>Apple</li>
+            </ul>
+        </ul>
+       </div>
+        <br><hr>
+        <!--3.Adjacent Sibling Selector-->
+        <caption><h1>3.Adjacent sibling Selector</h1></caption>
+
+        <div>
+            <h6>Hiiii</h6>
+            <div>
+                <p>This is Pratiksha</p>
+                <p>Hello</p>
+            </div>
+
+        <p>Sneha</p>
+        <p>Shri</p>
+
+            <div>
+                <p>Pratiksha</p>
+            </div>
+        <p>ECS</p>
+        <p>Karad</p>
+       
+        </div>
+        <h6>Hii</h6>
+       <br><hr>
+        <!--4.Genral sibling Selector-->
+        <caption><h1>4.Genral sibling Selector</h1></caption>
+        <div>
+            <h6>Hiiii</h6>
+        </div>
+        <div>
+            <p>This is Sneha</p>
+            <p>heyy</p>
+        </div>
+            <p>Sneha</p>
+            <p>shri</p>
+            <div>
+                <p>ECS</p>
+                <p>Karad</p>
+            </div>
+            <h6>Hiiii</h6>
+</body>
+</html>

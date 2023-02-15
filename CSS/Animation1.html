@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation1</title>
+    <style>
+        div{
+            border: 2px solid ;
+        }
+        .A{border:2px solid;
+            animation-name: abc;
+            animation-iteration-count: 10;
+            animation-delay: 10s;
+            animation-duration:2s;
+            margin:100px 350px 100px 350px;
+            padding:100px 350px 100px 350px;
+        }
+        @keyframes abc{
+           0%{
+            background-color: crimson;
+            top: 0px;
+            left:10px;
+           }
+           25%{
+            background-color: chartreuse;
+            top: 0px;
+            left:100px;
+           }
+           50%{
+            background-color: teal;
+            top: 0px;
+            left:10px;
+           }
+        }
+        </style>
+</head>
+<body>
+    <div>
+        <div class="A">My div</div>
+    </div>
+</body>
+</html>
