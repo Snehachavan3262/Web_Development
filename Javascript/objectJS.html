@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ObjectJS</title>
+</head>
+<body>
+    <script>
+        //there is two method for decleing the object
+        //syntax:1)let user=new object();    2)let user={};
+    /*    document.write("<h1>object in js</h1>");         
+        let user={
+            name:"sneha",
+            Age:21,
+            address:"koparde Haveli,Karad"
+        }
+        document.write(user.name,"<br>");
+
+        document.write("<h1>multiword</h1>");
+        let person={
+            'fav subject':'marathi',
+            "fav topic":true,
+            name:"divya"
+        };
+        document.write(person["fav subject"]);
+
+        document.write("<h1>taking the input from the user</h1>"); 
+        let introduction={
+            name:"sneha",
+            Age:21,
+            address:"koparde Haveli,Karad"
+        }
+        let key=prompt("Enter your key");
+        document.write(introduction[key]+"<br>");
+
+        document.write("<h1>nested object</h1>"); 
+        let student={
+            fname:"XYZ",
+            name:"Sneha chavan",
+            age:21,
+            marks:{
+                English:20,
+                Maths:70
+            }
+        }
+        //let k_ey=prompt("enter your key");
+        document.write(student.marks.English+"<br>");
+
+        document.write("<h1>object with function</h1>"); 
+        
+        let stu_dent={
+            fname:"XYZ",
+            name:"Sneha chavan",
+            age:21,
+            
+            greet : new function(){
+                document.write("hello user");
+            }
+        }
+
+        document.write("<h1>object with function  EX-2</h1>"); 
+        
+        let stu_dent={
+            fname:"Sneha",
+            lname:" chavan",
+            age:21,
+            
+            fullname :function(){
+                let f=this.fname;
+                let l=this.lname;
+                document.write("fullname is " + f + " " + l); 
+            }
+        }
+        stu_dent.fullname();
+/*
+        document.write("<h1>sum of digits</h1>"); 
+        let n=123;
+        let sum=0;
+        while(n)
+        {
+            let rem=n%10
+            sum=sum+rem;
+            n=n/10;
+        }
+        function sumdigit(n){
+            let n=123;
+            let sum=0;
+            document.write("sumdigit is"+a+ "");
+
+        }
+
+    </script>
+</body>
+</html>

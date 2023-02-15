@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StringManipulation</title>
+</head>
+<body>
+    <script>
+       //String Slicing
+       document.write("<h1>Slice</h1>");
+       var a="Snehankita";
+       var b=a.slice(1,7);
+       var c=a.slice(0,2);
+       var d=a.slice(-1);
+
+       document.writeln(a);
+       document.writeln(b);
+       document.writeln(c);
+       document.writeln(d);
+       document.writeln("<br>");
+
+       //String Replace
+       var A="My Name is Name";
+       var B=A.replace("Name","Villege");
+       document.writeln(B);
+       document.writeln("<br>");
+
+       var C=A.replace(/name/gi,"Villege");
+       document.writeln(C);
+       document.writeln("<br>");
+
+       var D="my name is name";
+       var E=D.replace(/name/i,"villege");
+       document.writeln(E);
+       document.writeln("<br>");
+
+       var D="my name is name";
+       var E=D.replace(/Name/,"villege");
+       document.writeln(E);
+       document.writeln("<br>");
+
+       //String length
+       document.write("<h1>String length</h1>");
+       var P="Jay Shambhu";
+       document.write(P.length);
+       document.writeln("<br>");
+       var Q=P.length;
+       document.writeln(Q);
+       document.writeln("<br>");
+
+       //concatination
+       document.write("<h1>String Concatination</h1>");
+       var R= "Hare Ram";
+       document.writeln(P+R);
+       document.writeln("<br>");
+       
+       document.write(P.concat(R));
+       document.writeln("<br>");
+       document.writeln("<br>");
+
+       //CharAT(index)
+       document.write("<h1>CharAT(index)</h1>");
+       var S="Snehankita";
+    </script>
+</body>
+</html>
